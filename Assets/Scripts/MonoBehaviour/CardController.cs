@@ -42,7 +42,7 @@ public class CardController : MonoBehaviour
 
     private void Start()
     {
-        //this.cardMovement = this.card.GetComponent<CardMovement>();
+
     }
 
     public void ToggleCard()
@@ -63,9 +63,7 @@ public class CardController : MonoBehaviour
     #region Card Movement
     public void SelectCard()
     {
-        //DONE envoyer un event pour bloquer le drag and drop du personnage.
         this.CardStartMovingEvent.Invoke();
-        //DONE envoyer un event pour déplacer la carte.
         this.cardMovement.OnCardMoveTo(this.cardPosition.SelectedPosition, this.cardPosition.ToSelectedPositionSpeed);
     }
 
