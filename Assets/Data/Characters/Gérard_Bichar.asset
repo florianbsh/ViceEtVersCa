@@ -19,7 +19,7 @@ MonoBehaviour:
   heavenImpact: 65
   hellImpact: 35
   characterSprite: {fileID: 21300000, guid: 063480c3f4d8806458703e24a212d81d, type: 3}
-  profilePicture: {fileID: 0}
+  profilePicture: {fileID: 21300000, guid: 77a6f89632938104ea46362d861498b9, type: 3}
   job: 
   facts:
   - "G\xE9rard est un vieil homme, comp\xE9titeur dans l'\xE2me G\xE9rard s\u2019est

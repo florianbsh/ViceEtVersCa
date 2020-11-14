@@ -19,7 +19,7 @@ MonoBehaviour:
   heavenImpact: 10
   hellImpact: 90
   characterSprite: {fileID: 21300000, guid: 418ca04f69a22da46881300c38c63bfd, type: 3}
-  profilePicture: {fileID: 0}
+  profilePicture: {fileID: 21300000, guid: 9dd8b1c4c31972f4384e5097d9487282, type: 3}
   job: sage-femme
   facts:
   - "lham est une jeune sage-femme au caract\xE8re enjou\xE9. Elle est tr\xE8s souvent
