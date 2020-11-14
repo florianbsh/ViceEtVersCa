@@ -35,7 +35,7 @@ public class CardMovement : MonoBehaviour
 
         Vector2 delta = this.targetPosition - this.Position;
 
-        if (Mathf.Abs(delta.x) <= 10f && Mathf.Abs(delta.y) <= 10f)
+        if (Mathf.Abs(delta.x) <= 5f && Mathf.Abs(delta.y) <= 5f)
         {
             this.isMoving = false;
         }
