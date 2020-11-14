@@ -84,7 +84,7 @@ public class CharacterController : MonoBehaviour
         if (!hasBeenJudged)
         {
             hasBeenJudged = true;
-            ChangeToProfilePicture();
+            //ChangeToProfilePicture();
         }
         CurrentZone = zone;
         ResetPosition = newResetPosition;

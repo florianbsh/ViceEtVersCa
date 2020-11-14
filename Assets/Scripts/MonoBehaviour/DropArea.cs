@@ -36,6 +36,7 @@ public class DropArea : MonoBehaviour
             CharacterController character = collision.GetComponent<CharacterController>();
             Vector3 newResetPosition = topLeftCornerPosition + new Vector3((numElements % columns) * elementSize.x, (numElements / columns) * (-elementSize.y));
             character.Dropped(zone, newResetPosition);
+            character.ApplyResetPosition();
             elements[numElements] = character;
             ++numElements;
         }
