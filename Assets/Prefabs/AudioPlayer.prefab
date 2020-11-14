@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5979024869264101272}
   - component: {fileID: 5979024869264101271}
+  - component: {fileID: 225968377}
   m_Layer: 0
   m_Name: AudioPlayer
   m_TagString: Untagged
@@ -127,3 +128,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &225968377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979024869264101270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a55cd3e649dfe74188a7da59f6a9094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeStell: {fileID: 8300000, guid: c8208073fda31464a97b6e870fd66040, type: 3}
+  volumeTakeStell: 5
+  play1: 0
+  dropStell: {fileID: 8300000, guid: 89ab56754ceb6a04e948ff36676b7479, type: 3}
+  volumeDropStell: 5
+  play2: 0
+  DropPlayerSound: {fileID: 8300000, guid: 29b1b5bcbb973ad42b5a1a8cc2d3d08a, type: 3}
+  volumeDropPlayerSound: 1
+  play3: 0
+  validationClip: {fileID: 0}
+  volumeValidation: 1
+  play4: 0
