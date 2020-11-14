@@ -36,6 +36,11 @@ public class GameManager : MonoBehaviour
         ChangeScene(MenuScene);
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
     public void ChangeScene(string sceneName, bool keepGameScene = false, bool isGameScene = false)
     {
         StartCoroutine(ChangeSceneCoroutine(sceneName, keepGameScene, isGameScene));
