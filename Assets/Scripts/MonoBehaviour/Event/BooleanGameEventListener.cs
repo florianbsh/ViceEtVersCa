@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterStatEventListener : MonoBehaviour
+public class BooleanGameEventListener : MonoBehaviour
 {
-    public CharacterStatEvent_SO Event;
-    public Events.CharacterStatEvent Response;
+    public BooleanGameEvent_SO Event;
+    public Events.BooleanEvent Response;
 
     private void OnEnable()
     {
@@ -17,8 +17,8 @@ public class CharacterStatEventListener : MonoBehaviour
         this.Event.UnregisterListener(this);
     }
 
-    public void OnEventRaised(CharacterStat characterStat)
+    public void OnEventRaised(bool value)
     {
-        this.Response.Invoke(characterStat);
+        this.Response.Invoke(value);
     }
 }
