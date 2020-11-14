@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: "G\xE9rard_Bichar"
+  m_EditorClassIdentifier: 
+  lastName: "G\xE9rard"
+  firstName: Bichar
+  yearOfBirth: 1943
+  yearOfDeath: 2039
+  heavenImpact: 65
+  hellImpact: 35
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: 
+  facts:
+  - "G\xE9rard est un vieil homme, comp\xE9titeur dans l'\xE2me G\xE9rard s\u2019est
+    vite passionn\xE9 pour le bridge en compagnie de son \xE9pouse Henriette, leur
+    rencontre fut une r\xE9v\xE9lation, un coup de foudre comme on en voit peu, alors
+    \xE2g\xE9 de 20 ans et malgr\xE9 ses \xE9tudes de pharmacien, il courtisa Henriette
+    assid\xFBment pendant 2 ans, jusqu'\xE0 parvenir \xE0 la s\xE9duire. G\xE9rard
+    est bon vivant, il aime le bon vin et est amateur de viande, ses moment pr\xE9f\xE9r\xE9s
+    \xE9tant quand il se retrouve avec un ver et une pi\xE8ce de viande tendre. "
+  circumstancesOfDeath: "G\xE9rard Bichar meurt de vieillesse \xE0 l'\xE2ge de 96
+    ans avant d\u2019\xEAtre mis en terre dans le caveau familial. "

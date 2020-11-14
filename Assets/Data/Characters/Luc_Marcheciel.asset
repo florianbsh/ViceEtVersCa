@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
-  m_Name: New Character Stat
+  m_Name: Luc_Marcheciel
   m_EditorClassIdentifier: 
   lastName: 'Luc '
   firstName: 'Marcheciel '
   yearOfBirth: 1977
   yearOfDeath: 2018
+  heavenImpact: 30
+  hellImpact: 70
   characterSprite: {fileID: 0}
   profilePicture: {fileID: 0}
   job: travailleur saisonnier
@@ -29,4 +31,5 @@ MonoBehaviour:
     sur bois m\xEAme s' il n\u2019est pas tr\xE8s dou\xE9. Il entretient de bonnes
     relations avec sa m\xE8re qu\u2019il ne voit pas assez souvent du fait de son
     travail. \r\n"
-  circumstancesOfDeath: 
+  circumstancesOfDeath: Luc meurt de blessure par balle, deux chevrotines dans le
+    dos.

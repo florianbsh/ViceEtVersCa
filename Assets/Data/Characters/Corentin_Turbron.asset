@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Corentin_Turbron
+  m_EditorClassIdentifier: 
+  lastName: Corentin
+  firstName: Turbron
+  yearOfBirth: 1974
+  yearOfDeath: 2002
+  heavenImpact: 55
+  hellImpact: 45
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: "D\xE9veloppeur jeux video"
+  facts:
+  - "Corentin est un fringuant dipl\xF4m\xE9 d\u2019une \xE9cole de jeu vid\xE9o,
+    comptabilisant maintenant 2 ans d'exp\xE9rience dans ce domaine, il se sent indispensable
+    \xE0 son entreprise, malheureusement celle ci n'a pas encore les moyens de le
+    payer \xE0 la hauteur des ses efforts mais cela viendra. Corentin ne compte pas
+    ses heures, ici on ne fait qu\u2019un avec l'\xE9quipe dans un environnement
+    de travail intense et collaboratif. En plus il y aura une corbeille de fruits
+    \xE0 la fin. Corentin n\u2019a plus beaucoup de temps \xE0 consacrer \xE0 sa
+    meilleure amie Sacha."
+  circumstancesOfDeath: "Corentin meurt de fatigue caus\xE9e par un effort intense
+    sur une trop longue dur\xE9e."

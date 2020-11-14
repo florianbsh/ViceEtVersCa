@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Rachel_Bouveresse
+  m_EditorClassIdentifier: 
+  lastName: Rachel
+  firstName: Bouveresse
+  yearOfBirth: 1981
+  yearOfDeath: 2018
+  heavenImpact: 20
+  hellImpact: 80
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: 
+  facts:
+  - "Rachel est une sympathique conductrice de car scolaire. Elle aime les coll\xE9giens
+    qu\u2019elle transporte et appr\xE9cie leur laisser la libert\xE9 de chahuter
+    un peu dans le car, quelle que soit la nature de ce chahut. Elle adore regarder
+    des com\xE9dies romantiques dans son temps libre, mais cela ne l\u2019emp\xEAche
+    pas de vivre heureuse en tant que c\xE9libataire.\r\n "
+  circumstancesOfDeath: "Rachel est morte, victime d\u2019une erreur m\xE9dicale
+    lors d\u2019une op\xE9ration au cerveau.\r\n"

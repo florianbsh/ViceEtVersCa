@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Ilham_Bouarif
+  m_EditorClassIdentifier: 
+  lastName: Ilham
+  firstName: Ilham
+  yearOfBirth: 1978
+  yearOfDeath: 2016
+  heavenImpact: 10
+  hellImpact: 90
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: sage-femme
+  facts:
+  - "lham est une jeune sage-femme au caract\xE8re enjou\xE9. Elle est tr\xE8s souvent
+    press\xE9e du fait de ses difficult\xE9s avec la ponctualit\xE9. Elle adore pratiquer
+    le parapente en compagnie de son \xE9pouse Sylvie. Grande amoureuse de la nature,
+    elle aime passer son temps libre \xE0 s'occuper de leur jardin."
+  circumstancesOfDeath: "Ilham est morte dans un accident de voiture en voulant \xE9viter,
+    sans succ\xE8s, un enfant aux milieux de la route.\r\n"

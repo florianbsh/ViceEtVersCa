@@ -30,11 +30,27 @@ public class CharacterStat : ScriptableObject
     }
 
     [SerializeField]
-    [Range(2018f, 2050f)]
+    [Range(2000f, 2050f)]
     private int yearOfDeath;
     public string YearOfDeath
     {
         get => this.yearOfDeath.ToString();
+    }
+
+    [Header("Impact ")]
+    
+    [SerializeField] 
+    private int heavenImpact;
+    public int HeanvenImpact
+    {
+        get => this.heavenImpact;
+    }
+   
+    [SerializeField]
+    private int hellImpact;
+    public int HellImpact
+    {
+        get => this.hellImpact;
     }
 
     [Header("Sprite")]
