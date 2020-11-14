@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec29c4de1f6ee472f8f8c581f269b5f5, type: 3}
+  m_Name: First Phase Positions
+  m_EditorClassIdentifier: 
+  selectedPosition: {x: 0, y: -22}
+  deseselctedPosition: {x: 0, y: -935}
+  hidePosition: {x: 0, y: -1060}
+  toSelectedPositionSpeed: 1.7
+  toDeselectedPositionSpeed: 1.7
+  toHidePositionSpeed: 1.5
