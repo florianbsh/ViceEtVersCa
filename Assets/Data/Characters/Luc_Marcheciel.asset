@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: New Character Stat
+  m_EditorClassIdentifier: 
+  lastName: 'Luc '
+  firstName: 'Marcheciel '
+  yearOfBirth: 1977
+  yearOfDeath: 2018
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: travailleur saisonnier
+  facts:
+  - "Luc est un jeune travailleur saisonnier de 27 ans,  travaillant dans les Pyr\xE9n\xE9es
+    en hiver et dans la Creuse en \xE9t\xE9 ou il y a pris ses habitudes. Ayant pris
+    go\xFBt \xE0 la chasse apr\xE8s qu\u2019une connaissance lui ait fait d\xE9couvrir,
+    il aime \xE0 se consid\xE9rer comme un bon chasseur. Chr\xE9tien pratiquant,
+    il n'a jamais manqu\xE9 une messe le dimanche. Fan de science fiction consacre
+    beaucoup de temps \xE0 en lire ou \xE0 regarder des film.Il aime la sculpture
+    sur bois m\xEAme s' il n\u2019est pas tr\xE8s dou\xE9. Il entretient de bonnes
+    relations avec sa m\xE8re qu\u2019il ne voit pas assez souvent du fait de son
+    travail. \r\n"
+  circumstancesOfDeath: 
