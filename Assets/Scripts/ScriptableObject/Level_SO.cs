@@ -42,6 +42,13 @@ public class Level_SO : ScriptableObject
         return this.characterStats[this.runtimeCharacterIndex];
     }
 
+    public CharacterStat GetCurrentCharacterStatAndIncreament()
+    {
+        CharacterStat characterStat = this.characterStats[this.runtimeCharacterIndex];
+        ++this.runtimeCharacterIndex;
+        return characterStat;
+    }
+
     public CharacterStat GetNextCharacterStat()
     {
         ++this.runtimeCharacterIndex;

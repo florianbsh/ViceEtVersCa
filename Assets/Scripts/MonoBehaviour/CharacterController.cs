@@ -9,8 +9,13 @@ public class CharacterController : MonoBehaviour
 {
     public Events.CharacterStatEvent CharacterInitializeEvent;
 
+    public UnityEvent CharacterDropped;
+
     [SerializeField]
     private CharacterStat characterStat;
+
+    [SerializeField]
+    private Level_SO level;
 
     private bool isSpriteActive = false;
 
@@ -24,7 +29,7 @@ public class CharacterController : MonoBehaviour
     private Rigidbody2D elementRigidBody;
     private SpriteRenderer spriteRenderer;
 
-    private void Start()
+    private void Awake()
     {
         elementCollider = GetComponent<Collider2D>();
         elementCollider.isTrigger = false;
@@ -34,6 +39,11 @@ public class CharacterController : MonoBehaviour
 
         spriteRenderer = GetComponent<SpriteRenderer>();
 
+        this.characterStat = this.level.GetCurrentCharacterStatAndIncreament();
+    }
+
+    private void Start()
+    {
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
 
@@ -84,9 +94,11 @@ public class CharacterController : MonoBehaviour
         if (!hasBeenJudged)
         {
             hasBeenJudged = true;
-            //ChangeToProfilePicture();
+            ChangeToProfilePicture();
         }
         CurrentZone = zone;
         ResetPosition = newResetPosition;
+
+        this.CharacterDropped.Invoke();
     }
 }
