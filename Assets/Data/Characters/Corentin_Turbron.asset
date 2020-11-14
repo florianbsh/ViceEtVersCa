@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2002
   heavenImpact: 55
   hellImpact: 45
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: bde95f2d75c15f24d806bd79a352f662, type: 3}
+  profilePicture: {fileID: 21300000, guid: 2ac7b2301b7d5174b81b8c9f0337e9ed, type: 3}
   job: "D\xE9veloppeur jeux video"
   facts:
   - "Corentin est un fringuant dipl\xF4m\xE9 d\u2019une \xE9cole de jeu vid\xE9o,

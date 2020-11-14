@@ -17,6 +17,12 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private Level_SO level;
 
+    [SerializeField]
+    private Vector2 colliderSizeFullSize;
+
+    [SerializeField]
+    private Vector2 colliderSizeProfilePicture;
+
     private bool isSpriteActive = false;
 
     public Vector3 DefaultPosition { get; set; }
@@ -25,25 +31,23 @@ public class CharacterController : MonoBehaviour
 
     private bool hasBeenJudged = false;
 
-    private Collider2D elementCollider;
+    private BoxCollider2D elementCollider;
     private Rigidbody2D elementRigidBody;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        elementCollider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        elementCollider = GetComponent<BoxCollider2D>();
         elementCollider.isTrigger = false;
+        
 
         elementRigidBody = GetComponent<Rigidbody2D>();
         elementRigidBody.bodyType = RigidbodyType2D.Kinematic;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         this.characterStat = this.level.GetCurrentCharacterStatAndIncreament();
-    }
 
-    private void Start()
-    {
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
 
@@ -52,8 +56,7 @@ public class CharacterController : MonoBehaviour
 
     public void ToggleCharacterSprite()
     {
-        this.isSpriteActive = !this.isSpriteActive;
-        this.spriteRenderer.sprite = this.isSpriteActive ? this.characterStat.CharacterSprite : null;
+        ChangeToFullCharacter();
 
         this.CharacterInitializeEvent.Invoke(this.characterStat);
     }
@@ -82,23 +85,27 @@ public class CharacterController : MonoBehaviour
     public void ChangeToProfilePicture()
     {
         spriteRenderer.sprite = characterStat.ProfilePicture;
+        elementCollider.size = colliderSizeProfilePicture;
     }
 
     public void ChangeToFullCharacter()
     {
         spriteRenderer.sprite = characterStat.CharacterSprite;
+        elementCollider.size = colliderSizeFullSize;
     }
 
     public void Dropped(Zone zone, Vector3 newResetPosition)
     {
+        Debug.Log("Drop");
         if (!hasBeenJudged)
         {
             hasBeenJudged = true;
             ChangeToProfilePicture();
+            this.CharacterDropped.Invoke();
         }
         CurrentZone = zone;
         ResetPosition = newResetPosition;
 
-        this.CharacterDropped.Invoke();
+        
     }
 }

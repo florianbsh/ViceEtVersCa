@@ -18,7 +18,7 @@ MonoBehaviour:
   yearOfDeath: 2039
   heavenImpact: 65
   hellImpact: 35
-  characterSprite: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 063480c3f4d8806458703e24a212d81d, type: 3}
   profilePicture: {fileID: 0}
   job: 
   facts:

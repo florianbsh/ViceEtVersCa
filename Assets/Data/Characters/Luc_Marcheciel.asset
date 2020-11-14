@@ -18,7 +18,7 @@ MonoBehaviour:
   yearOfDeath: 2018
   heavenImpact: 30
   hellImpact: 70
-  characterSprite: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 3f38c49d5e0a49b48adedf88c4441d1f, type: 3}
   profilePicture: {fileID: 0}
   job: travailleur saisonnier
   facts:
