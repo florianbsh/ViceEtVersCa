@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 321686193086669280}
   - component: {fileID: 321686193086669295}
   - component: {fileID: 321686193086669281}
+  - component: {fileID: 4245340049909130788}
   m_Layer: 9
   m_Name: Character
   m_TagString: Untagged
@@ -175,3 +176,30 @@ MonoBehaviour:
   level: {fileID: 11400000, guid: 1a86115cb1ccd4dd6a276d5421365e91, type: 2}
   colliderSizeFullSize: {x: 5, y: 6}
   colliderSizeProfilePicture: {x: 1.8, y: 1.8}
+--- !u!114 &4245340049909130788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321686193086669284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b381115ccad84b27a69006b6300b8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: e651056b6f15f4f1d96813e42dc4621a, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 321686193086669281}
+        m_MethodName: OnNextBatch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -115,6 +115,9 @@ public class CharacterController : MonoBehaviour
 
     public void OnNextBatch()
     {
-
+        if (this.CurrentZone != Zone.Purgatory)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

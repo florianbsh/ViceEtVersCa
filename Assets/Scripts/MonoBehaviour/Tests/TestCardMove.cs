@@ -11,6 +11,8 @@ public class TestCardMove : MonoBehaviour
 
     public UnityEvent CardHideEvent = new UnityEvent();
 
+    public UnityEvent NextBatchEvent;
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +29,11 @@ public class TestCardMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             this.CardHideEvent.Invoke();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            this.NextBatchEvent.Invoke();
         }
     }
 }
