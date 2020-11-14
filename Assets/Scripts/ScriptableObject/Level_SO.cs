@@ -20,6 +20,13 @@ public class Level_SO : ScriptableObject
     }
 
     [SerializeField]
+    private Vector2 initialPosition;
+    public Vector2 InitialPosition
+    {
+        get => this.initialPosition;
+    }
+
+    [SerializeField]
     [Range(0f, 19f)]
     private int characterIndex;
 
@@ -32,6 +39,26 @@ public class Level_SO : ScriptableObject
 
     public CharacterStat GetCurrentCharacterStat()
     {
+        return this.characterStats[this.runtimeCharacterIndex];
+    }
+
+    public CharacterStat GetCurrentCharacterStatAndIncreament()
+    {
+        CharacterStat characterStat = this.characterStats[this.runtimeCharacterIndex];
+        ++this.runtimeCharacterIndex;
+        return characterStat;
+    }
+
+    public CharacterStat GetNextCharacterStat()
+    {
+        ++this.runtimeCharacterIndex;
+
+        if (this.runtimeCharacterIndex >= 20)
+        {
+            Debug.LogWarning("[Level_SO] index out of range");
+            return null;
+        }
+
         return this.characterStats[this.runtimeCharacterIndex];
     }
 }

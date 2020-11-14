@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e172b9d289f4a85b2abecf487ebb1a, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  characterPrefab: {fileID: 0}
+  characterPrefab: {fileID: 321686193086669284, guid: 1f05455d58e85e048978a6d2fe628b38,
+    type: 3}
   characterStats:
+  - {fileID: 11400000, guid: 2bd2d5de6000cf8449356d7b14d1f68f, type: 2}
+  - {fileID: 11400000, guid: df22ccfbff3fe486da5f791b4dce4a3a, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -32,6 +35,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  initialPosition: {x: 0, y: 0}
   characterIndex: 0
