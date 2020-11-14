@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))] 
 public class DropArea : MonoBehaviour
 {
     [SerializeField] private int lines;
@@ -14,15 +15,16 @@ public class DropArea : MonoBehaviour
     private int numElements = 0;
     private Vector3 topLeftCornerPosition;
 
-    private DraggableComponent[] elements;
+    private DragSystem[] elements;
 
     private Collider2D areaCollider;
 
     private void Awake()
     {
         areaCollider = GetComponent<Collider2D>();
+        areaCollider.isTrigger = true;
         topLeftCornerPosition = this.transform.position + new Vector3(-((columns - 1) / 2.0f) * elementSize.x, ((lines - 1) / 2.0f) * elementSize.y);
-        elements = new DraggableComponent[lines * columns];
+        elements = new DragSystem[lines * columns];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,9 +32,7 @@ public class DropArea : MonoBehaviour
         Debug.Log(collision.gameObject);
         if (numElements < lines * columns && collision.IsTouchingLayers(dropLayer))
         {
-            DraggableComponent draggableComponent = collision.GetComponent<DraggableComponent>();
-            
-            Debug.Log("Element: " + numElements + " " + (numElements % columns) * elementSize.x + " " + (numElements / columns) * (-elementSize.y));
+            DragSystem draggableComponent = collision.GetComponent<DragSystem>();
             draggableComponent.ResetPosition = topLeftCornerPosition + new Vector3((numElements % columns) * elementSize.x, (numElements / columns) * (-elementSize.y));
             elements[numElements] = draggableComponent;
             ++numElements;
@@ -41,11 +41,9 @@ public class DropArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        DraggableComponent draggableComponent;
+        DragSystem draggableComponent;
         if (collision.gameObject.TryGetComponent(out draggableComponent))
         {
-            Debug.Log("out");
-
             for (int i = 0; i < numElements; ++i)
             {
                 if (elements[i] == draggableComponent)

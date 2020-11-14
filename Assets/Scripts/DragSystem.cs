@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DraggableComponent : MonoBehaviour
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
+public class DragSystem : MonoBehaviour
 {
     [SerializeField] private LayerMask droppingArea;
 
@@ -15,8 +17,17 @@ public class DraggableComponent : MonoBehaviour
     public Vector3 DefaultPosition { get; set; }
     public Vector3 ResetPosition { get; set; }
 
+    private Collider2D elementCollider;
+    private Rigidbody2D elementRigidBody;
+
     private void Start()
     {
+        elementCollider = GetComponent<Collider2D>();
+        elementCollider.isTrigger = false;
+
+        elementRigidBody = GetComponent<Rigidbody2D>();
+        elementRigidBody.bodyType = RigidbodyType2D.Kinematic;
+
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
     }
