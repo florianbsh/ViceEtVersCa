@@ -13,10 +13,6 @@ public class MovingBare : MonoBehaviour
         bar = GetComponent<Image>();
     }
 
-    private void Update()
-    {
-        UpdateBareState();
-    }
 
     // Make the bare avancement decrease 
     public void ReduceBare(int value)
