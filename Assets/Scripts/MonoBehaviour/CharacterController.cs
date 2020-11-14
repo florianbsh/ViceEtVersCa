@@ -23,8 +23,6 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private Vector2 colliderSizeProfilePicture;
 
-    private bool isSpriteActive = false;
-
     public Vector3 DefaultPosition { get; set; }
     public Vector3 ResetPosition { get; set; }
     public Zone CurrentZone { get; set; } = Zone.Void;
@@ -74,6 +72,20 @@ public class CharacterController : MonoBehaviour
 
     private void OnMouseUp()
     {
+        ApplyDrop();
+    }
+
+    public void ApplyDrop()
+    {
+        if (!hasBeenJudged)
+        {
+            hasBeenJudged = true;
+            this.CharacterDropped.Invoke(true);
+        }
+        else
+        {
+            this.CharacterDropped.Invoke(false);
+        }
         ApplyResetPosition();
     }
 
@@ -94,19 +106,9 @@ public class CharacterController : MonoBehaviour
         elementCollider.size = colliderSizeFullSize;
     }
 
-    public void Dropped(Zone zone, Vector3 newResetPosition)
+    public void PendingDrop(Zone zone, Vector3 newResetPosition)
     {
-        Debug.Log("Drop");
-        if (!hasBeenJudged)
-        {
-            hasBeenJudged = true;
-            ChangeToProfilePicture();
-            this.CharacterDropped.Invoke(true);
-        }
-        else
-        {
-            this.CharacterDropped.Invoke(false);
-        }
+        ChangeToProfilePicture();
         CurrentZone = zone;
         ResetPosition = newResetPosition;
     }
