@@ -22,7 +22,7 @@ public class CharacterStat : ScriptableObject
 
     [Header("Date")]
     [SerializeField]
-    [Range(1920f, 2020f)]
+    [Range(1920f, 2050f)]
     private int yearOfBirth;
     public string YearOfBirth
     {
@@ -30,7 +30,7 @@ public class CharacterStat : ScriptableObject
     }
 
     [SerializeField]
-    [Range(2018f, 2021f)]
+    [Range(2018f, 2050f)]
     private int yearOfDeath;
     public string YearOfDeath
     {

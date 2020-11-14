@@ -12,8 +12,6 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private CharacterStat characterStat;
 
-    [SerializeField] private Sprite fullCharacter;
-    [SerializeField] private Sprite icon;
     private bool isSpriteActive = false;
 
     public Vector3 DefaultPosition { get; set; }
@@ -35,7 +33,6 @@ public class CharacterController : MonoBehaviour
         elementRigidBody.bodyType = RigidbodyType2D.Kinematic;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = fullCharacter;
 
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
@@ -72,14 +69,14 @@ public class CharacterController : MonoBehaviour
         transform.position = ResetPosition + Vector3.back;
     }
 
-    public void ChangeToIcon()
+    public void ChangeToProfilePicture()
     {
-        spriteRenderer.sprite = icon;
+        spriteRenderer.sprite = characterStat.ProfilePicture;
     }
 
     public void ChangeToFullCharacter()
     {
-        spriteRenderer.sprite = fullCharacter;
+        spriteRenderer.sprite = characterStat.CharacterSprite;
     }
 
     public void Dropped(Zone zone, Vector3 newResetPosition)
@@ -87,7 +84,7 @@ public class CharacterController : MonoBehaviour
         if (!hasBeenJudged)
         {
             hasBeenJudged = true;
-            spriteRenderer.sprite = icon;
+            ChangeToProfilePicture();
         }
         CurrentZone = zone;
         ResetPosition = newResetPosition;
