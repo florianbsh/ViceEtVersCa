@@ -13,6 +13,13 @@ public class Level_SO : ScriptableObject
     }
 
     [SerializeField]
+    private int nbCharacterByBatch;
+    public int NbCharacterByBatch
+    {
+        get => this.nbCharacterByBatch;
+    }
+
+    [SerializeField]
     private CharacterStat[] characterStats;
     public CharacterStat[] CharacterStats
     {
@@ -60,5 +67,10 @@ public class Level_SO : ScriptableObject
         }
 
         return this.characterStats[this.runtimeCharacterIndex];
+    }
+
+    public bool isBatchEnd()
+    {
+        return this.runtimeCharacterIndex % this.nbCharacterByBatch == 0;
     }
 }

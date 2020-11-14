@@ -160,9 +160,9 @@ MonoBehaviour:
   CharacterDropped:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 6b36df34981a94635a75201d7a5af1ee, type: 2}
+      - m_Target: {fileID: 11400000, guid: cf7d116905edb4f3ba6c594847b34c30, type: 2}
         m_MethodName: Raise
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

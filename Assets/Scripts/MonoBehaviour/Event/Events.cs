@@ -7,4 +7,7 @@ public class Events : MonoBehaviour
 {
     [System.Serializable]
     public class CharacterStatEvent : UnityEvent<CharacterStat> { }
+
+    [System.Serializable]
+    public class BooleanEvent : UnityEvent<bool> { }
 }

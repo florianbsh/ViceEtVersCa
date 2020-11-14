@@ -9,7 +9,7 @@ public class CharacterController : MonoBehaviour
 {
     public Events.CharacterStatEvent CharacterInitializeEvent;
 
-    public UnityEvent CharacterDropped;
+    public Events.BooleanEvent CharacterDropped;
 
     [SerializeField]
     private CharacterStat characterStat;
@@ -101,11 +101,18 @@ public class CharacterController : MonoBehaviour
         {
             hasBeenJudged = true;
             ChangeToProfilePicture();
-            this.CharacterDropped.Invoke();
+            this.CharacterDropped.Invoke(true);
+        }
+        else
+        {
+            this.CharacterDropped.Invoke(false);
         }
         CurrentZone = zone;
         ResetPosition = newResetPosition;
+    }
 
-        
+    public void OnNextBatch()
+    {
+
     }
 }
