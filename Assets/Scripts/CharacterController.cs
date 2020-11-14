@@ -7,9 +7,14 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController : MonoBehaviour
 {
+    public Events.CharacterStatEvent CharacterInitializeEvent;
+
+    [SerializeField]
+    private CharacterStat characterStat;
 
     [SerializeField] private Sprite fullCharacter;
     [SerializeField] private Sprite icon;
+    private bool isSpriteActive = false;
 
     public Vector3 DefaultPosition { get; set; }
     public Vector3 ResetPosition { get; set; }
@@ -34,6 +39,16 @@ public class CharacterController : MonoBehaviour
 
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
+
+        ToggleCharacterSprite();
+    }
+
+    public void ToggleCharacterSprite()
+    {
+        this.isSpriteActive = !this.isSpriteActive;
+        this.spriteRenderer.sprite = this.isSpriteActive ? this.characterStat.CharacterSprite : null;
+
+        this.CharacterInitializeEvent.Invoke(this.characterStat);
     }
 
     private void OnMouseDown()

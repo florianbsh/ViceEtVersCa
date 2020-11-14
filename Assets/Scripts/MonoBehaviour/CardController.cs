@@ -35,9 +35,14 @@ public class CardController : MonoBehaviour
     [SerializeField]
     private Image characterPrifilePicture;
 
-    private void Start()
+    private void Awake()
     {
         this.cardMovement = this.card.GetComponent<CardMovement>();
+    }
+
+    private void Start()
+    {
+        //this.cardMovement = this.card.GetComponent<CardMovement>();
     }
 
     public void ToggleCard()

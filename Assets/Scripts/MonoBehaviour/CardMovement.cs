@@ -21,10 +21,6 @@ public class CardMovement : MonoBehaviour
 
     private float speed;
 
-    private float duration;
-
-    private float time;
-
     private void Awake()
     {
         this.rectTransform = GetComponent<RectTransform>();
@@ -39,23 +35,12 @@ public class CardMovement : MonoBehaviour
 
         Vector2 delta = this.targetPosition - this.Position;
 
-        if (delta.x == 0 && delta.y == 0)
+        if (Mathf.Abs(delta.x) <= 10f && Mathf.Abs(delta.y) <= 10f)
         {
             this.isMoving = false;
         }
 
         this.Position += delta * this.speed * Time.deltaTime;
-
-        //(this.duration - this.time) / this.duration
-
-        //this.time += Time.deltaTime;
-
-        //if (this.time >= this.duration)
-        //{
-        //    this.isMoving = false;
-
-        //    this.CardEndMovingEvent.Invoke();
-        //}
     }
 
     public void OnCardMoveTo(Vector2 targetPosition, float speed)
@@ -63,9 +48,6 @@ public class CardMovement : MonoBehaviour
         this.targetPosition = targetPosition;
         this.speed = speed;
 
-        this.duration = Mathf.Abs(targetPosition.y - this.Position.y) / speed;
-
-        this.time = 0f;
         this.isMoving = true;
     }
 }

@@ -143,6 +143,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d204a5b6d1669584996bbf15a4b8d831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppingArea:
-    serializedVersion: 2
-    m_Bits: 256
+  CharacterInitializeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5ab082861dea64c8782b2227e8c467ee, type: 2}
+        m_MethodName: Raise
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  characterStat: {fileID: 0}
+  fullCharacter: {fileID: 0}
+  icon: {fileID: 0}

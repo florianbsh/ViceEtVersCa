@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[System.Serializable]
-public class CharacterStatEvent : UnityEvent<CharacterStat> { }
+//[System.Serializable]
+//public class CharacterStatEvent : UnityEvent<CharacterStat> { }
 
 public class CharacterStatEventListener : MonoBehaviour
 {
     public CharacterStatEvent_SO Event;
-    public CharacterStatEvent Response;
+    public Events.CharacterStatEvent Response;
 
     private void OnEnable()
     {
