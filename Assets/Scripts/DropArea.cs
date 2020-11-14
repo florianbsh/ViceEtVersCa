@@ -11,11 +11,12 @@ public class DropArea : MonoBehaviour
     [SerializeField] private float padding;
     [SerializeField] private LayerMask characterLayers;
     [SerializeField] private LayerMask dropLayer;
+    [SerializeField] private Zone zone;
 
     private int numElements = 0;
     private Vector3 topLeftCornerPosition;
 
-    private DragSystem[] elements;
+    private CharacterController[] elements;
 
     private Collider2D areaCollider;
 
@@ -24,7 +25,7 @@ public class DropArea : MonoBehaviour
         areaCollider = GetComponent<Collider2D>();
         areaCollider.isTrigger = true;
         topLeftCornerPosition = this.transform.position + new Vector3(-((columns - 1) / 2.0f) * elementSize.x, ((lines - 1) / 2.0f) * elementSize.y);
-        elements = new DragSystem[lines * columns];
+        elements = new CharacterController[lines * columns];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,27 +33,26 @@ public class DropArea : MonoBehaviour
         Debug.Log(collision.gameObject);
         if (numElements < lines * columns && collision.IsTouchingLayers(dropLayer))
         {
-            DragSystem draggableComponent = collision.GetComponent<DragSystem>();
-            draggableComponent.ResetPosition = topLeftCornerPosition + new Vector3((numElements % columns) * elementSize.x, (numElements / columns) * (-elementSize.y));
-            elements[numElements] = draggableComponent;
+            CharacterController character = collision.GetComponent<CharacterController>();
+            Vector3 newResetPosition = topLeftCornerPosition + new Vector3((numElements % columns) * elementSize.x, (numElements / columns) * (-elementSize.y));
+            character.Dropped(zone, newResetPosition);
+            elements[numElements] = character;
             ++numElements;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        DragSystem draggableComponent;
-        if (collision.gameObject.TryGetComponent(out draggableComponent))
+        CharacterController character;
+        if (collision.gameObject.TryGetComponent(out character))
         {
             for (int i = 0; i < numElements; ++i)
             {
-                if (elements[i] == draggableComponent)
+                if (elements[i] == character)
                 {
                     RepositionElements(i);
                 }
             }
-
-            draggableComponent.ResetPosition = draggableComponent.DefaultPosition;
         }
     }
 
