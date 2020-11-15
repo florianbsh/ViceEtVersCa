@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class MovingBare : MonoBehaviour
 {
     [SerializeField]  private int cibleValue ; //should be pass at nomrla field afeter test 
@@ -37,6 +39,11 @@ public class MovingBare : MonoBehaviour
     public void ImproveBare(int value)
     {
         this.cibleValue += value;
+
+        if (this.cibleValue >= maxvalue)
+        {
+            SceneManager.LoadScene("DefeatScene", LoadSceneMode.Single);
+        }
         //UpdateBareState();
     }
 

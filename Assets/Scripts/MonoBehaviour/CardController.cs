@@ -27,10 +27,15 @@ public class CardController : MonoBehaviour
     private Text characterDate;
 
     [SerializeField]
+    private Text nbOfFactText;
+
+    [SerializeField]
     private Text characterFact;
 
     [SerializeField]
     private Image characterPrifilePicture;
+
+    private int indexFact;
 
     private void Awake()
     {
@@ -51,6 +56,8 @@ public class CardController : MonoBehaviour
     public void IntroduceNewCard(CharacterStat characterStat)
     {
         this.characterStat = characterStat;
+
+        this.indexFact = 0;
 
         SetCharacterStatOnCard();
 
@@ -86,11 +93,70 @@ public class CardController : MonoBehaviour
 
         this.characterPrifilePicture.sprite = this.characterStat.ProfilePicture;
 
-        this.characterFact.text = "";
+        SetCurrentFact();
+    }
 
-        for (int i = 0; i < this.characterStat.Facts.Length; ++i)
+    public void OnNextFact()
+    {
+        if (this.cardPosition.CardStatus != CardStatus.Selected)
         {
-            this.characterFact.text += this.characterStat.Facts[i] + "\n";
+            return;
+        }
+
+        if (this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            ++this.indexFact;
+
+            SetCurrentFact();
+        }
+    }
+
+    public void OnPreviousFact()
+    {
+        if (this.cardPosition.CardStatus != CardStatus.Selected)
+        {
+            return;
+        }
+
+        if (this.indexFact - 1 >= 0)
+        {
+            --this.indexFact;
+
+            SetCurrentFact();
+        }
+    }
+
+    private void SetCurrentFact()
+    {
+        if (this.characterStat.Facts.Length == 0)
+        {
+            this.characterFact.text = "";
+            this.nbOfFactText.text = "";
+            return;
+        }
+
+        if (this.characterStat.Facts.Length > 1)
+        {
+            this.nbOfFactText.text = (this.indexFact + 1).ToString() + " / " + this.characterStat.Facts.Length.ToString();
+        }
+        else
+        {
+            this.nbOfFactText.text = "";
+        }
+
+        this.characterFact.text = this.characterStat.Facts[this.indexFact];
+
+        if (this.indexFact > 0 && this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [<- ; ->]";
+        }
+        else if (this.indexFact == 0 && this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [->]";
+        }
+        if (this.indexFact > 0 && this.indexFact + 1 >= this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [<-]";
         }
     }
 }

@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cibleValue: 0
-  maxvalue: 1000
+  maxvalue: 176
   movingSpeed: 0.01
 --- !u!114 &5070255120433965482
 MonoBehaviour:
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cibleValue: 0
-  maxvalue: 1000
+  maxvalue: 176
   movingSpeed: 0.01
 --- !u!114 &5070255120445639900
 MonoBehaviour:
