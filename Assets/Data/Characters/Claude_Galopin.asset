@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Claude_Galopin
+  m_EditorClassIdentifier: 
+  lastName: Galopin
+  firstName: Claude
+  yearOfBirth: 1946
+  yearOfDeath: 2014
+  heavenImpact: 85
+  hellImpact: 15
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: "Retrait\xE9"
+  facts:
+  - "Claude a 68 ans et vit de sa retraite. Chasseur depuis 20 ans personne ne lui
+    dira ce qu\u2019il peut ou ne peut pas faire et encore moins cette ophtalmo qui
+    veut le priver de sa passion sous pr\xE9texte qu\u2019il est miope et astigmate. "
+  - "Apr\xE8s tout le pays a besoin de lui, en tant que premier \xE9cologiste du
+    pays. Il se doit de pr\xE9lever une partie de la faune pour maintenir un \xE9quilibre."
+  - "Jean aime boire une bonne bouteille entre amis, ou avec sa famille. Seul Claude
+    est aussi un amateur de charcuterie, qu\u2019il confectionnait lui-m\xEAme \xE9tant
+    plus jeune."
+  - "Claude meurt d\u2019une crise cardiaque apr\xE8s 7 ans de prison pour homicide
+    involontaire."
+  circumstancesOfDeath: 

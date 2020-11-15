@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
   m_Name: Luc_Marcheciel
   m_EditorClassIdentifier: 
-  lastName: 'Luc '
-  firstName: 'Marcheciel '
+  lastName: Marcheciel
+  firstName: Luc
   yearOfBirth: 1977
   yearOfDeath: 2018
   heavenImpact: 30
@@ -23,13 +23,14 @@ MonoBehaviour:
   job: travailleur saisonnier
   facts:
   - "Luc est un jeune travailleur saisonnier de 27 ans,  travaillant dans les Pyr\xE9n\xE9es
-    en hiver et dans la Creuse en \xE9t\xE9 ou il y a pris ses habitudes. Ayant pris
-    go\xFBt \xE0 la chasse apr\xE8s qu\u2019une connaissance lui ait fait d\xE9couvrir,
-    il aime \xE0 se consid\xE9rer comme un bon chasseur. Chr\xE9tien pratiquant,
-    il n'a jamais manqu\xE9 une messe le dimanche. Fan de science fiction consacre
-    beaucoup de temps \xE0 en lire ou \xE0 regarder des film.Il aime la sculpture
-    sur bois m\xEAme s' il n\u2019est pas tr\xE8s dou\xE9. Il entretient de bonnes
-    relations avec sa m\xE8re qu\u2019il ne voit pas assez souvent du fait de son
-    travail. \r\n"
-  circumstancesOfDeath: Luc meurt de blessure par balle, deux chevrotines dans le
-    dos.
+    en hiver et dans la Creuse en \xE9t\xE9, o\xF9 il a pris ses habitudes."
+  - "Ayant pris go\xFBt \xE0 la chasse apr\xE8s qu\u2019une connaissance lui ait
+    fait d\xE9couvrir, il aime \xE0 se consid\xE9rer comme un bon chasseur."
+  - "Chr\xE9tien pratiquant, il n'a jamais manqu\xE9 une messe le dimanche. Fan de
+    science fiction, il consacre beaucoup de temps \xE0 lire ou \xE0 regarder des
+    films."
+  - "Il aime la sculpture sur bois, m\xEAme s' il n\u2019est pas tr\xE8s dou\xE9.
+    Il entretient de bonnes relations avec sa m\xE8re qu\u2019il ne voit pas assez
+    souvent du fait de son travail. "
+  - Luc meurt de blessure par balle, deux chevrotines dans le dos.
+  circumstancesOfDeath: 

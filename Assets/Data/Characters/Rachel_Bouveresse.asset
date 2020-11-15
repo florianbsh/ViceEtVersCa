@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
   m_Name: Rachel_Bouveresse
   m_EditorClassIdentifier: 
-  lastName: Rachel
-  firstName: Bouveresse
+  lastName: Bouveresse
+  firstName: Rachel
   yearOfBirth: 1981
   yearOfDeath: 2018
   heavenImpact: 20

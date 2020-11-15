@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
-  m_Name: "G\xE9rard_Bichar"
+  m_Name: Gerard_Bichar
   m_EditorClassIdentifier: 
-  lastName: "G\xE9rard"
-  firstName: Bichar
+  lastName: Bichard
+  firstName: "G\xE9rard"
   yearOfBirth: 1943
   yearOfDeath: 2039
   heavenImpact: 65
