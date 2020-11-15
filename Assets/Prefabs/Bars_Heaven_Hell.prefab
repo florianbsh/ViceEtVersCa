@@ -339,8 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cibleValue: 0
-  maxvalue: 100
-  movingSpeed: 1
+  maxvalue: 1000
+  movingSpeed: 0.01
 --- !u!114 &5070255120433965482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,8 +457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cibleValue: 0
-  maxvalue: 100
-  movingSpeed: 1
+  maxvalue: 1000
+  movingSpeed: 0.01
 --- !u!114 &5070255120445639900
 MonoBehaviour:
   m_ObjectHideFlags: 0
