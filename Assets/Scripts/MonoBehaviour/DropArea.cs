@@ -30,7 +30,6 @@ public class DropArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject);
         if (numElements < lines * columns && collision.IsTouchingLayers(dropLayer))
         {
             CharacterController character = collision.GetComponent<CharacterController>();

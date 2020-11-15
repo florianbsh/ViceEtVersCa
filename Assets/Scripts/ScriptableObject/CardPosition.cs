@@ -5,6 +5,14 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CardPosition : ScriptableObject
 {
+    [SerializeField]
+    private CardStatus cardStatus;
+    public CardStatus CardStatus
+    {
+        get => this.cardStatus;
+        set => this.cardStatus = value;
+    }
+
     [Header("Positions")]
     [SerializeField]
     private Vector2 selectedPosition;

@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d204a5b6d1669584996bbf15a4b8d831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterInitializeEvent:
+  CharacterSelectedEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 5ab082861dea64c8782b2227e8c467ee, type: 2}
@@ -173,6 +173,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   characterStat: {fileID: 0}
+  cardPosition: {fileID: 11400000, guid: 66cdda8adcc4b4a618d5d19f3830271f, type: 2}
   level: {fileID: 11400000, guid: 1a86115cb1ccd4dd6a276d5421365e91, type: 2}
   colliderSizeFullSize: {x: 5, y: 6}
   colliderSizeProfilePicture: {x: 1.8, y: 1.8}
