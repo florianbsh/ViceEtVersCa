@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Events/BooleanEvent")]
 public class BooleanGameEvent_SO : ScriptableObject
 {
     private List<BooleanGameEventListener> listeners = new List<BooleanGameEventListener>();

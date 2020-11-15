@@ -10,4 +10,7 @@ public class Events : MonoBehaviour
 
     [System.Serializable]
     public class BooleanEvent : UnityEvent<bool> { }
+
+    [System.Serializable]
+    public class IntEvent : UnityEvent<int> { }
 }

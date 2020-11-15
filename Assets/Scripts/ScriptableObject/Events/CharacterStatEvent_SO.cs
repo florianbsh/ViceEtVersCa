@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Events/CharacterStatEvent")]
 public class CharacterStatEvent_SO : ScriptableObject
 {
     private List<CharacterStatEventListener> listeners = new List<CharacterStatEventListener>();

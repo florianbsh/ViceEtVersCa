@@ -11,6 +11,9 @@ public class CharacterController : MonoBehaviour
 
     public Events.BooleanEvent CharacterDropped;
 
+    public Events.IntEvent UpdateRedBarEvent;
+    public Events.IntEvent UpdateBlueBarEvent;
+
     [SerializeField]
     private CharacterStat characterStat;
 
@@ -130,6 +133,16 @@ public class CharacterController : MonoBehaviour
     {
         if (this.CurrentZone != Zone.Purgatory)
         {
+            if (this.CurrentZone == Zone.Heaven)
+            {
+                this.UpdateRedBarEvent.Invoke(this.characterStat.HeanvenImpact);
+            }
+
+            if (this.CurrentZone == Zone.Hell)
+            {
+                this.UpdateBlueBarEvent.Invoke(this.characterStat.HellImpact);
+            }
+
             Destroy(this.gameObject);
         }
     }
