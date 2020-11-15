@@ -23,8 +23,8 @@ MonoBehaviour:
   job: "D\xE9veloppeur jeux video"
   facts:
   - "Corentin est un fringuant dipl\xF4m\xE9 d\u2019une \xE9cole de jeu vid\xE9o,
-    comptabilisant maintenant 2 ans d'exp\xE9rience dans ce domaine. Il se sent indispensable
-    \xE0 son entreprise."
+    comptabilisant maintenant 2 ans d'exp\xE9rience dans ce domaine. \nIl se sent
+    indispensable \xE0 son entreprise."
   - "Malheureusement,  celle-ci n'a pas encore les moyens de le payer \xE0 la hauteur
     des ses efforts, mais cela viendra."
   - "Corentin ne compte pas ses heures. Le crunch ici c\u2019est un esprit, on ne
