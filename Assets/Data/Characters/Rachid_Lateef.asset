@@ -23,8 +23,8 @@ MonoBehaviour:
   job: 
   facts:
   - "Rachid est un coll\xE9gien d\u2019un naturel timide. \nFan d'animation japonaise
-    et de jeux r\xE9tro, il est plut\xF4t solitaire."
-  - "Harcel\xE9 \xE0 l'\xE9cole par des camarades l'ayant pris en grippe, il tente
+    et de jeux r\xE9tro,  il est plut\xF4t solitaire."
+  - "Harcel\xE9 \xE0 l'\xE9cole par des camarades l'ayant pris en grippe,\n il tente
     d\u2019en parler au corps enseignant, sans succ\xE8s."
   - "Il finit par en \xEAtre r\xE9duit \xE0 la derni\xE8re extr\xE9mit\xE9 pour mettre
     fin \xE0 ses souffrances."
