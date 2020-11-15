@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CharacterManager : MonoBehaviour
     private CharacterStat currentCharacterStat;
 
     private GameObject[] characterInPurgatory;
+
+    public UnityEvent onLastCharacterDropped;
 
     private void Start()
     {
@@ -23,6 +26,10 @@ public class CharacterManager : MonoBehaviour
         if (isFirstTime && !this.level.isBatchEnd())
         {
             NextCharacter();
+        }
+        else
+        {
+            onLastCharacterDropped.Invoke();
         }
     }
 

@@ -79,6 +79,16 @@ public class Level_SO : ScriptableObject
 
     public bool isBatchEnd()
     {
+        Debug.Log(runtimeCharacterIndex);
         return this.runtimeCharacterIndex % this.nbCharacterByBatch == 0;
+    }
+
+    public bool isNextCharacterBatchEnd()
+    {
+        if (this.runtimeCharacterIndex == 0)
+        {
+            return false;
+        }
+        return (this.runtimeCharacterIndex - 1) % this.nbCharacterByBatch == 0;
     }
 }
