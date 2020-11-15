@@ -16,8 +16,8 @@ MonoBehaviour:
   firstName: "Charl\xE8ne"
   yearOfBirth: 2002
   yearOfDeath: 2050
-  heavenImpact: 80
-  hellImpact: 20
+  heavenImpact: 75
+  hellImpact: 25
   characterSprite: {fileID: 0}
   profilePicture: {fileID: 0}
   job: Surveillante
