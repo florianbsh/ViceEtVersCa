@@ -30,9 +30,6 @@ public class CardController : MonoBehaviour
     private Text characterFact;
 
     [SerializeField]
-    private Text characterDeath;
-
-    [SerializeField]
     private Image characterPrifilePicture;
 
     private void Awake()
@@ -94,7 +91,5 @@ public class CardController : MonoBehaviour
         {
             this.characterFact.text += this.characterStat.Facts[i] + "\n";
         }
-
-        this.characterDeath.text = this.characterStat.CircumstancesOfDeath;
     }
 }
