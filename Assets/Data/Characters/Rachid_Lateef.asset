@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2016
   heavenImpact: 5
   hellImpact: 95
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 49b3f2b7bb3dfc44cb6e3797044e6a9b, type: 3}
+  profilePicture: {fileID: 21300000, guid: 05ec26c736fea2a4c9cc3c11c0718de8, type: 3}
   job: 
   facts:
   - "Rachid est un coll\xE9gien d\u2019un naturel timide. Fan d'animation japonaise

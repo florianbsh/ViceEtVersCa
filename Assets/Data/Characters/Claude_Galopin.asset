@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2014
   heavenImpact: 85
   hellImpact: 15
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: f7a5a1dd0a8c74a45b3416de70f0e73f, type: 3}
+  profilePicture: {fileID: 21300000, guid: f624f28cb53ef71488327917de35f644, type: 3}
   job: "Retrait\xE9"
   facts:
   - "Claude a 68 ans et vit de sa retraite. Chasseur depuis 20 ans personne ne lui

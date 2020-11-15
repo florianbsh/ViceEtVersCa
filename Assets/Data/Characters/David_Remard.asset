@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2019
   heavenImpact: 99
   hellImpact: 1
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 1a897977c0bc7a5479f41f0f9a42a13d, type: 3}
+  profilePicture: {fileID: 21300000, guid: fe7853cce754b2340b03a22c72ae8c0c, type: 3}
   job: 
   facts:
   - "Jeune adolescent ayant fait sa pouss\xE9e de croissance plus t\xF4t que les

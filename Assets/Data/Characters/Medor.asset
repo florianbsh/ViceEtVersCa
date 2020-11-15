@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2019
   heavenImpact: 1
   hellImpact: 99
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 87cc9e2f38e561c47bed53021eb416cc, type: 3}
+  profilePicture: {fileID: 21300000, guid: 5a3217537e67702428bddf713db692f2, type: 3}
   job: Chien
   facts:
   - "Chien de David, ce magnifique labrador aux beaux yeux d\u2019or est plein d\u2019\xE9nergie.

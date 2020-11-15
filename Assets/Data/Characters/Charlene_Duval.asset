@@ -18,8 +18,8 @@ MonoBehaviour:
   yearOfDeath: 2050
   heavenImpact: 75
   hellImpact: 25
-  characterSprite: {fileID: 0}
-  profilePicture: {fileID: 0}
+  characterSprite: {fileID: 21300000, guid: 1a7c2fd3ce5480347b944a5352d29fa7, type: 3}
+  profilePicture: {fileID: 21300000, guid: 212baf41a2e132d4482b9fde4bbdc4fc, type: 3}
   job: Surveillante
   facts:
   - "Charl\xE8ne est la seule vraie amie de David avec lequel elle a fait les 400
