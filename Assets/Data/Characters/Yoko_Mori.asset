@@ -22,11 +22,11 @@ MonoBehaviour:
   profilePicture: {fileID: 21300000, guid: 62eed902a49bc2344a905b4cdcf479be, type: 3}
   job: "Institutrice retrait\xE9e"
   facts:
-  - "Professeure des \xE9coles, Yoko passe sa vie au sein de l\u2019\xE9ducation
+  - "Professeure des \xE9coles, \nYoko passe sa vie au sein de l\u2019\xE9ducation
     nationale. Son m\xE9tier lui permet de se consacrer \xE0 ses deux passions :
-    les enfants et la transmission de connaissances."
+    les enfants et\n la transmission de connaissances."
   - "Boulevers\xE9e par la mort d\u2019un de ses \xE9l\xE8ves dans des circonstances
-    tragiques, elle se consacre \xE0 la lutte contre le harc\xE8lement scolaire."
+    tragiques, \n\nelle se consacre \xE0 la lutte contre le harc\xE8lement scolaire."
   - "Elle cr\xE9e et pr\xE9side une association qui essaimera dans de nombreux \xE9tablissements
     de France et de Navarre."
   - "Elle meurt dans son sommeil \xE0 l\u2019\xE2ge de 86 ans."
