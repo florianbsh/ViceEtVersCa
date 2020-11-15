@@ -1028,19 +1028,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
         type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
       propertyPath: CardSelectEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 960224417}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: CardSelectEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectCard
-      objectReference: {fileID: 0}
     - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
         type: 3}
       propertyPath: CardDeselectEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1048,45 +1038,9 @@ PrefabInstance:
       objectReference: {fileID: 960224417}
     - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
         type: 3}
-      propertyPath: CardDeselectEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DeselectCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
       propertyPath: CardHideEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 960224417}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: CardHideEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: e651056b6f15f4f1d96813e42dc4621a,
-        type: 2}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312833311519003710, guid: 8a7a767ab668c4d938e8603290a0371d,
-        type: 3}
-      propertyPath: NextBatchEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6312833311519003711, guid: 8a7a767ab668c4d938e8603290a0371d,
         type: 3}
       propertyPath: m_LocalPosition.x
