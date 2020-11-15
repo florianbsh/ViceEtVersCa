@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec29c4de1f6ee472f8f8c581f269b5f5, type: 3}
   m_Name: First Phase Positions
   m_EditorClassIdentifier: 
+  cardStatus: 3
   selectedPosition: {x: 0, y: -22}
   deseselctedPosition: {x: 0, y: -930}
   hidePosition: {x: 0, y: -1080}

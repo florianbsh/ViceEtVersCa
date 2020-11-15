@@ -9,8 +9,12 @@ public class CharacterManager : MonoBehaviour
 
     private CharacterStat currentCharacterStat;
 
+    private GameObject[] characterInPurgatory;
+
     private void Start()
     {
+        this.characterInPurgatory = new GameObject[this.level.NbCharacterInPurgatory];
+
         NextCharacter();
     }
 
@@ -27,5 +31,15 @@ public class CharacterManager : MonoBehaviour
         this.currentCharacterStat = this.level.GetCurrentCharacterStat();
 
         GameObject character = Instantiate(this.level.CharacterPrefab, this.level.InitialPosition, Quaternion.identity);
+    }
+
+    public void OnNextBatch()
+    {
+
+    }
+
+    public void OnCharacterInPurgatory()
+    {
+
     }
 }

@@ -18,5 +18,23 @@ MonoBehaviour:
   characterStats:
   - {fileID: 11400000, guid: 2bd2d5de6000cf8449356d7b14d1f68f, type: 2}
   - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 11400000, guid: 16ec42bb8362758448d7d9bd9b335e08, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   initialPosition: {x: 0, y: 0}
   characterIndex: 0
