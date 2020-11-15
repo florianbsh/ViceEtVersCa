@@ -27,6 +27,9 @@ public class CardController : MonoBehaviour
     private Text characterDate;
 
     [SerializeField]
+    private Text nbOfFactText;
+
+    [SerializeField]
     private Text characterFact;
 
     [SerializeField]
@@ -90,12 +93,6 @@ public class CardController : MonoBehaviour
 
         this.characterPrifilePicture.sprite = this.characterStat.ProfilePicture;
 
-        //this.characterFact.text = "";
-
-        //for (int i = 0; i < this.characterStat.Facts.Length; ++i)
-        //{
-        //    this.characterFact.text += this.characterStat.Facts[i] + "\n";
-        //}
         SetCurrentFact();
     }
 
@@ -134,7 +131,17 @@ public class CardController : MonoBehaviour
         if (this.characterStat.Facts.Length == 0)
         {
             this.characterFact.text = "";
+            this.nbOfFactText.text = "";
             return;
+        }
+
+        if (this.characterStat.Facts.Length > 1)
+        {
+            this.nbOfFactText.text = (this.indexFact + 1).ToString() + " / " + this.characterStat.Facts.Length.ToString();
+        }
+        else
+        {
+            this.nbOfFactText.text = "";
         }
 
         this.characterFact.text = this.characterStat.Facts[this.indexFact];
