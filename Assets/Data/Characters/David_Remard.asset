@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: David_Remard
+  m_EditorClassIdentifier: 
+  lastName: Remard
+  firstName: David
+  yearOfBirth: 2002
+  yearOfDeath: 2019
+  heavenImpact: 99
+  hellImpact: 1
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: 
+  facts:
+  - "Jeune adolescent ayant fait sa pouss\xE9e de croissance plus t\xF4t que les
+    autres, il en profite pour faire la loi dans la cour de r\xE9cr\xE9. "
+  - "Il prend Rachid comme t\xEAte de turc, et prend l\u2019habitude de le ridiculiser
+    devant ses camarades dans le car scolaire. Il ne le l\xE2chera que lorsque Rachid
+    dispara\xEEtra."
+  - "Peu appr\xE9ci\xE9 de ses camarades, craint par la plupart, il m\xE8ne une adolescence
+    peu heureuse, malgr\xE9 quelques moments de bonheur en compagnie de Charl\xE8ne
+    ou de son chien."
+  - "Il meurt jeune en faisant de la p\xEAche \xE0 la dynamite avec son chien."
+  circumstancesOfDeath: 

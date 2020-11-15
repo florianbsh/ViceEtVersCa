@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
   m_Name: Ilham_Bouarif
   m_EditorClassIdentifier: 
-  lastName: Ilham
+  lastName: Bouarif
   firstName: Ilham
   yearOfBirth: 1978
   yearOfDeath: 2016
@@ -20,11 +20,16 @@ MonoBehaviour:
   hellImpact: 90
   characterSprite: {fileID: 21300000, guid: 418ca04f69a22da46881300c38c63bfd, type: 3}
   profilePicture: {fileID: 21300000, guid: 9dd8b1c4c31972f4384e5097d9487282, type: 3}
-  job: sage-femme
+  job: Sage-femme
   facts:
-  - "lham est une jeune sage-femme au caract\xE8re enjou\xE9. Elle est tr\xE8s souvent
-    press\xE9e du fait de ses difficult\xE9s avec la ponctualit\xE9. Elle adore pratiquer
-    le parapente en compagnie de son \xE9pouse Sylvie. Grande amoureuse de la nature,
-    elle aime passer son temps libre \xE0 s'occuper de leur jardin."
-  circumstancesOfDeath: "Ilham est morte dans un accident de voiture en voulant \xE9viter,
-    sans succ\xE8s, un enfant aux milieux de la route.\r\n"
+  - "Ilham est une jeune sage-femme au caract\xE8re enjou\xE9. Elle est tr\xE8s souvent
+    press\xE9e du fait de ses difficult\xE9s avec la ponctualit\xE9. Cela ne l\u2019emp\xEAche
+    pas d\u2019\xEAtre reconnue dans son travail et appr\xE9ci\xE9e de ses coll\xE8gues."
+  - "Elle adore pratiquer le parapente en compagnie de son \xE9pouse Sylvie. Grande
+    amoureuse de la nature, elle aime passer son temps libre \xE0 s'occuper de leur
+    jardin."
+  - "Son m\xE9tier r\xE9v\xE8le chez elle un grand d\xE9sir de fonder une famille
+    et d\u2019avoir des enfants."
+  - "Ilham d\xE9c\xE8de suite \xE0 un accident de voiture alors qu\u2019elle a voulu
+    \xE9viter, sans succ\xE8s, un enfant au milieu de la route."
+  circumstancesOfDeath: 

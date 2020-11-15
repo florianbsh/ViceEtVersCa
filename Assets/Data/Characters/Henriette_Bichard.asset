@@ -16,6 +16,8 @@ MonoBehaviour:
   firstName: Henriette
   yearOfBirth: 1952
   yearOfDeath: 2039
+  heavenImpact: 10
+  hellImpact: 90
   characterSprite: {fileID: 21300000, guid: c8bea9179971a06438b3e1055d9d7439, type: 3}
   profilePicture: {fileID: 21300000, guid: 647ccc03c58fb1949b8b93c7d99c8160, type: 3}
   job: Femme au foyer
