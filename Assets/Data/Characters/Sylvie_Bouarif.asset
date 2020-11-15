@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Sylvie_Bouarif
+  m_EditorClassIdentifier: 
+  lastName: Bouarif
+  firstName: Sylvie
+  yearOfBirth: 1976
+  yearOfDeath: 2019
+  heavenImpact: 60
+  hellImpact: 40
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: '?'
+  facts:
+  - "Sylvie est une femme r\xE9volt\xE9e de nature. Elle passe beaucoup de son temps
+    libre \xE0 faire du militantisme, que ce soit pour lutter pour l\u2019interdiction
+    de la chasse ou pour la fermeture des fronti\xE8res. Elle pratique la permaculture
+    et fait tous ses d\xE9placements \xE0 v\xE9lo.\r\nElle d\xE9c\xE8de d\u2019une
+    intoxication alimentaire due \xE0 la consommation de champignons non identifi\xE9s.\r\n"
+  circumstancesOfDeath: 

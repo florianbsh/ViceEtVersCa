@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
-  m_Name: Medor
+  m_Name: Miel
   m_EditorClassIdentifier: 
   lastName: 
-  firstName: "M\xE9dor"
-  yearOfBirth: 2015
+  firstName: Miel
+  yearOfBirth: 2016
   yearOfDeath: 2019
-  heavenImpact: 1
-  hellImpact: 99
+  heavenImpact: 20
+  hellImpact: 80
   characterSprite: {fileID: 0}
   profilePicture: {fileID: 0}
-  job: Chien
+  job: Chat
   facts:
-  - "Chien de David, ce magnifique labrador aux beaux yeux d\u2019or est plein d\u2019\xE9nergie.
-    Il adore les promenades et veut toujours jouer \xE0 ramener son b\xE2ton."
-  - "Il meurt en ramenant le mauvais b\xE2ton \xE0 son ma\xEEtre."
+  - "Chat de Livia, il doit son nom \xE0 la couleur de son pelage chatoyant. Une
+    petite boule d\u2019\xE9nergie aux magnifiques yeux vairons, il a la f\xE2cheuse
+    tendance de renverser un peu tout sur son passage.\r\nIl meurt en essayant de
+    traverser la route alors que sa propri\xE9taire faisait la sieste dans les escaliers.\r\n"
   circumstancesOfDeath: 

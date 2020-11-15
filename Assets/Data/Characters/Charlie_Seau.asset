@@ -10,19 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
-  m_Name: Medor
+  m_Name: Charlie_Seau
   m_EditorClassIdentifier: 
-  lastName: 
-  firstName: "M\xE9dor"
-  yearOfBirth: 2015
-  yearOfDeath: 2019
-  heavenImpact: 1
-  hellImpact: 99
+  lastName: Seau
+  firstName: Charlie
+  yearOfBirth: 1979
+  yearOfDeath: 2004
+  heavenImpact: 50
+  hellImpact: 50
   characterSprite: {fileID: 0}
   profilePicture: {fileID: 0}
-  job: Chien
-  facts:
-  - "Chien de David, ce magnifique labrador aux beaux yeux d\u2019or est plein d\u2019\xE9nergie.
-    Il adore les promenades et veut toujours jouer \xE0 ramener son b\xE2ton."
-  - "Il meurt en ramenant le mauvais b\xE2ton \xE0 son ma\xEEtre."
+  job: '?'
+  facts: []
   circumstancesOfDeath: 
