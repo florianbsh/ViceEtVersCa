@@ -23,6 +23,6 @@ MonoBehaviour:
   job: Chien
   facts:
   - "Chien de David, ce magnifique labrador aux beaux yeux d\u2019or est plein d\u2019\xE9nergie.
-    Il adore les promenades et veut toujours jouer \xE0 ramener son b\xE2ton."
+    \nIl adore les promenades et veut toujours jouer \xE0 ramener son b\xE2ton."
   - "Il meurt en ramenant le mauvais b\xE2ton \xE0 son ma\xEEtre."
   circumstancesOfDeath: 
