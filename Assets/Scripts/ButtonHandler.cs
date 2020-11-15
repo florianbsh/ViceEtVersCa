@@ -20,12 +20,9 @@ public class ButtonHandler : MonoBehaviour
         validationButton.gameObject.SetActive(false);
     }
 
-    public void OnDropped(bool isFirstTime)
+    public void ActivateButton()
     {
-        if (this.level.isBatchEnd())
-        {
-            validationButton.gameObject.SetActive(true);
-        }
+        validationButton.gameObject.SetActive(true);
     }
 
     public void ValidateBatch()

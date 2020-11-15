@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Miel
+  m_EditorClassIdentifier: 
+  lastName: 
+  firstName: Miel
+  yearOfBirth: 2016
+  yearOfDeath: 2019
+  heavenImpact: 20
+  hellImpact: 80
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: Chat
+  facts:
+  - "Chat de Livia, il doit son nom \xE0 la couleur de son pelage chatoyant. Une
+    petite boule d\u2019\xE9nergie aux magnifiques yeux vairons, il a la f\xE2cheuse
+    tendance de renverser un peu tout sur son passage.\r\nIl meurt en essayant de
+    traverser la route alors que sa propri\xE9taire faisait la sieste dans les escaliers.\r\n"
+  circumstancesOfDeath: 

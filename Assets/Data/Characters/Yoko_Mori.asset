@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff19bf29bb624e1eb0b30c6bfdd489d, type: 3}
+  m_Name: Yoko_Mori
+  m_EditorClassIdentifier: 
+  lastName: Mori
+  firstName: Yoko
+  yearOfBirth: 1963
+  yearOfDeath: 2049
+  heavenImpact: 10
+  hellImpact: 90
+  characterSprite: {fileID: 0}
+  profilePicture: {fileID: 0}
+  job: "Institutrice retrait\xE9e"
+  facts:
+  - "Professeure des \xE9coles, Yoko passe sa vie au sein de l\u2019\xE9ducation
+    nationale. Son m\xE9tier lui permet de se consacrer \xE0 ses deux passions :
+    les enfants et la transmission de connaissances."
+  - "Boulevers\xE9e par la mort d\u2019un de ses \xE9l\xE8ves dans des circonstances
+    tragiques, elle se consacre \xE0 la lutte contre le harc\xE8lement scolaire."
+  - "Elle cr\xE9e et pr\xE9side une association qui essaimera dans de nombreux \xE9tablissements
+    de France et de Navarre."
+  - "Elle meurt dans son sommeil \xE0 l\u2019\xE2ge de 86 ans."
+  circumstancesOfDeath: 
