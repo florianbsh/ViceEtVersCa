@@ -13,4 +13,7 @@ public class Events : MonoBehaviour
 
     [System.Serializable]
     public class IntEvent : UnityEvent<int> { }
+
+    [System.Serializable]
+    public class GameObjectEvent : UnityEvent<GameObject> { }
 }

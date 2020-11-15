@@ -16,6 +16,10 @@ public class CharacterController : MonoBehaviour
 
     [SerializeField]
     private CharacterStat characterStat;
+    public CharacterStat CharacterStat
+    {
+        get => characterStat;
+    }
 
     [SerializeField]
     private CardPosition cardPosition;
@@ -33,7 +37,7 @@ public class CharacterController : MonoBehaviour
     public Vector3 ResetPosition { get; set; }
     public Zone CurrentZone { get; set; } = Zone.Void;
 
-    private bool hasBeenJudged = false;
+    public bool HasBeenJudged { get; set; } = false;
 
     private BoxCollider2D elementCollider;
     private Rigidbody2D elementRigidBody;
@@ -93,9 +97,9 @@ public class CharacterController : MonoBehaviour
 
     public void ApplyDrop()
     {
-        if (!hasBeenJudged && this.CurrentZone != Zone.Void)
+        if (!HasBeenJudged && this.CurrentZone != Zone.Void)
         {
-            hasBeenJudged = true;
+            HasBeenJudged = true;
             this.CharacterDropped.Invoke(true);
         }
         else

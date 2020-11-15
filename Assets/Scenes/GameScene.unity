@@ -303,6 +303,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48533ed454a7f2f4bbfa4fdd8a6640d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnAddPurgatoty:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: f2cea6e90919648f08eca469e1f24044, type: 2}
+        m_MethodName: Raise
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnRemovePurgatory:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 389366954aaca4ae38c226c2f48141be, type: 2}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lines: 1
   columns: 3
   elementSize: {x: 1, y: 1}
@@ -1069,6 +1097,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48533ed454a7f2f4bbfa4fdd8a6640d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnAddPurgatoty:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRemovePurgatory:
+    m_PersistentCalls:
+      m_Calls: []
   lines: 2
   columns: 3
   elementSize: {x: 1, y: 1}
@@ -1380,6 +1414,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48533ed454a7f2f4bbfa4fdd8a6640d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnAddPurgatoty:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRemovePurgatory:
+    m_PersistentCalls:
+      m_Calls: []
   lines: 2
   columns: 3
   elementSize: {x: 1, y: 1}
@@ -1684,6 +1724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070255120334440760, guid: dec8374c75b76493da76181eb2653913,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.2001343
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec8374c75b76493da76181eb2653913, type: 3}
