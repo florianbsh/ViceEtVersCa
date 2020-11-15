@@ -60,20 +60,21 @@ public class CardController : MonoBehaviour
     #region Card Movement
     public void SelectCard()
     {
+        this.cardPosition.CardStatus = CardStatus.Selected;
         this.CardStartMovingEvent.Invoke();
-        this.cardMovement.OnCardMoveTo(this.cardPosition.SelectedPosition, this.cardPosition.ToSelectedPositionSpeed);
+        this.cardMovement.OnCardMoveTo(this.cardPosition.SelectedPosition, this.cardPosition.ToSelectedPositionSpeed, CardStatus.Selected);
     }
 
     public void DeselectCard()
     {
         this.CardStartMovingEvent.Invoke();
-        this.cardMovement.OnCardMoveTo(this.cardPosition.DeselectedPosition, this.cardPosition.ToDeselectedPositionSpeed);
+        this.cardMovement.OnCardMoveTo(this.cardPosition.DeselectedPosition, this.cardPosition.ToDeselectedPositionSpeed, CardStatus.Deselected);
     }
 
     public void HideCard()
     {
         this.CardStartMovingEvent.Invoke();
-        this.cardMovement.OnCardMoveTo(this.cardPosition.HidePosition, this.cardPosition.ToHidePositionSpeed);
+        this.cardMovement.OnCardMoveTo(this.cardPosition.HidePosition, this.cardPosition.ToHidePositionSpeed, CardStatus.Hide);
     }
     #endregion
 

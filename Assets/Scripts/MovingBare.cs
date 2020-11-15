@@ -37,7 +37,6 @@ public class MovingBare : MonoBehaviour
         value = Mathf.Clamp(value, 0, maxvalue);
 
         float amount = (float)value / maxvalue;
-        Debug.Log(amount);
         bar.fillAmount = amount;
     }
 }

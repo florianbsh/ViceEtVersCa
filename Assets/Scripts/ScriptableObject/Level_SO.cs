@@ -20,6 +20,14 @@ public class Level_SO : ScriptableObject
     }
 
     [SerializeField]
+    [Range(1f, 4f)]
+    private int nbCharacterInPurgatory;
+    public int NbCharacterInPurgatory
+    {
+        get => this.nbCharacterInPurgatory;
+    }
+
+    [SerializeField]
     private CharacterStat[] characterStats;
     public CharacterStat[] CharacterStats
     {

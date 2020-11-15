@@ -7,12 +7,15 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController : MonoBehaviour
 {
-    public Events.CharacterStatEvent CharacterInitializeEvent;
+    public Events.CharacterStatEvent CharacterSelectedEvent;
 
     public Events.BooleanEvent CharacterDropped;
 
     [SerializeField]
     private CharacterStat characterStat;
+
+    [SerializeField]
+    private CardPosition cardPosition;
 
     [SerializeField]
     private Level_SO level;
@@ -49,35 +52,45 @@ public class CharacterController : MonoBehaviour
         ResetPosition = transform.localPosition;
         DefaultPosition = transform.localPosition;
 
-        ToggleCharacterSprite();
+        OnCharacterSelected();
     }
 
-    public void ToggleCharacterSprite()
+    public void OnCharacterSelected()
     {
         ChangeToFullCharacter();
 
-        this.CharacterInitializeEvent.Invoke(this.characterStat);
+        this.CharacterSelectedEvent.Invoke(this.characterStat);
     }
 
     private void OnMouseDown()
     {
-        // TODO show text, maybe in another script
+        // DONE show text, maybe in another script
+        if (Input.GetMouseButtonDown(1) && this.level.isBatchEnd() && this.cardPosition.CardStatus != CardStatus.Selected)
+        {
+            this.CharacterSelectedEvent.Invoke(this.characterStat);
+        }
     }
 
     private void OnMouseDrag()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(mousePos.x, mousePos.y, transform.localPosition.z);
+        if (Input.GetMouseButton(0) && this.cardPosition.CardStatus != CardStatus.Selected)
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector3(mousePos.x, mousePos.y, transform.localPosition.z);
+        }
     }
 
     private void OnMouseUp()
     {
-        ApplyDrop();
+        if (Input.GetMouseButtonUp(0))
+        {
+            ApplyDrop();
+        }
     }
 
     public void ApplyDrop()
     {
-        if (!hasBeenJudged)
+        if (!hasBeenJudged && this.CurrentZone != Zone.Void)
         {
             hasBeenJudged = true;
             this.CharacterDropped.Invoke(true);
@@ -115,6 +128,9 @@ public class CharacterController : MonoBehaviour
 
     public void OnNextBatch()
     {
-
+        if (this.CurrentZone != Zone.Purgatory)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

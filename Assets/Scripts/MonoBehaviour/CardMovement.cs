@@ -7,6 +7,11 @@ public class CardMovement : MonoBehaviour
 {
     public UnityEvent CardEndMovingEvent = new UnityEvent();
 
+    [SerializeField]
+    private CardPosition cardPosition;
+
+    private CardStatus cardStatus;
+
     private RectTransform rectTransform;
 
     public Vector2 Position
@@ -38,15 +43,18 @@ public class CardMovement : MonoBehaviour
         if (Mathf.Abs(delta.x) <= 5f && Mathf.Abs(delta.y) <= 5f)
         {
             this.isMoving = false;
+            this.cardPosition.CardStatus = this.cardStatus;
+            this.CardEndMovingEvent.Invoke();
         }
 
         this.Position += delta * this.speed * Time.deltaTime;
     }
 
-    public void OnCardMoveTo(Vector2 targetPosition, float speed)
+    public void OnCardMoveTo(Vector2 targetPosition, float speed, CardStatus cardStatus)
     {
         this.targetPosition = targetPosition;
         this.speed = speed;
+        this.cardStatus = cardStatus;
 
         this.isMoving = true;
     }
