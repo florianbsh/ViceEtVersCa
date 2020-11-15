@@ -16,8 +16,8 @@ MonoBehaviour:
   firstName: Rachid
   yearOfBirth: 2003
   yearOfDeath: 2016
-  heavenImpact: 0
-  hellImpact: 0
+  heavenImpact: 5
+  hellImpact: 95
   characterSprite: {fileID: 0}
   profilePicture: {fileID: 0}
   job: 

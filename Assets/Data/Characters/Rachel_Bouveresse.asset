@@ -20,7 +20,7 @@ MonoBehaviour:
   hellImpact: 80
   characterSprite: {fileID: 21300000, guid: 45281a9b9581a9a4383e536313a015e7, type: 3}
   profilePicture: {fileID: 21300000, guid: 344e5f576be6ad545850427f1f0f9964, type: 3}
-  job: 
+  job: Chauffeuse de car
   facts:
   - "Rachel est une sympathique conductrice de car scolaire. Elle aime les coll\xE9giens
     qu\u2019elle transporte et appr\xE9cie leur laisser la libert\xE9 de chahuter

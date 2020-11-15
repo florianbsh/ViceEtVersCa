@@ -22,17 +22,17 @@ MonoBehaviour:
   profilePicture: {fileID: 0}
   job: Chef d'entreprise
   facts:
-  - "Fabien est le chef de Exploit, une entreprise de cr\xE9ation de jeu vid\xE9o
+  - "Fabien est le chef de Exploit, une entreprise de cr\xE9ation de jeux vid\xE9o
     dynamique qui parvient gr\xE2ce \xE0 son organisation \xE0 sortir des jeux en
-    un temps record. Cela lui permet d\u2019engranger de grandes quantit\xE9s d\u2019argent.
-    Cet argent, il en a besoin pour ses passions : le pilotage de voiture de course
-    et le parachutisme, des sport a sensation qui lui permettent de se sentir vivant.
-    L\u2019autre chose qu\u2019il lui permet de retrouver ses sensations c\u2019est
-    sa coca\xEFne qu\u2019il ach\xE8te aupr\xE8s d\u2019un dealer du coin. Fabien
-    a bien s\xFBr quelques soucis avec l\u2019inspection du travail vis-\xE0-vis
+    un temps record.Cela lui permet d\u2019engranger de grandes quantit\xE9s d\u2019argent."
+  - 'Cet argent, il en a besoin pour ses passions : le pilotage de voiture de course
+    et le parachutisme, des sport a sensation qui lui permettent de se sentir vivant.'
+  - "L\u2019autre chose qui lui permet de retrouver ses sensations, c'est sa coca\xEFne,
+    qu\u2019il ach\xE8te aupr\xE8s d\u2019un dealer du coin."
+  - "Fabien a bien s\xFBr quelques soucis avec l\u2019inspection du travail vis-\xE0-vis
     de ses m\xE9thodes de management innovantes mais il a un tr\xE8s bon avocat.
-    De toute mani\xE8re les employ\xE9s ont l\u2019air tr\xE8s heureux et si il n\u2019etais
-    pas la qui serais la pour les employer. \r\nFabien meurt d\u2019une overdose
-    de coca\xEFne apr\xE8s la sortie d\u2019un jeu particuli\xE8rement rentable. 
-    \r\n"
+    De toute mani\xE8re, ses employ\xE9s ont l\u2019air tr\xE8s heureux, c\u2019est
+    gr\xE2ce \xE0 lui s\u2019ils ont un emploi apr\xE8s tout."
+  - "Fabien meurt d\u2019une overdose de coca\xEFne apr\xE8s la sortie d\u2019un
+    jeu particuli\xE8rement rentable."
   circumstancesOfDeath: 
