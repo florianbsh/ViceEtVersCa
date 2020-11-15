@@ -13,6 +13,10 @@ public class TestCardMove : MonoBehaviour
 
     public UnityEvent NextBatchEvent;
 
+    public UnityEvent NextFactEvent;
+
+    public UnityEvent PreviousFactEvent;
+
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +38,16 @@ public class TestCardMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             this.NextBatchEvent.Invoke();
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            this.NextFactEvent.Invoke();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            this.PreviousFactEvent.Invoke();
         }
     }
 }

@@ -32,6 +32,8 @@ public class CardController : MonoBehaviour
     [SerializeField]
     private Image characterPrifilePicture;
 
+    private int indexFact;
+
     private void Awake()
     {
         this.cardMovement = this.card.GetComponent<CardMovement>();
@@ -51,6 +53,8 @@ public class CardController : MonoBehaviour
     public void IntroduceNewCard(CharacterStat characterStat)
     {
         this.characterStat = characterStat;
+
+        this.indexFact = 0;
 
         SetCharacterStatOnCard();
 
@@ -86,11 +90,66 @@ public class CardController : MonoBehaviour
 
         this.characterPrifilePicture.sprite = this.characterStat.ProfilePicture;
 
-        this.characterFact.text = "";
+        //this.characterFact.text = "";
 
-        for (int i = 0; i < this.characterStat.Facts.Length; ++i)
+        //for (int i = 0; i < this.characterStat.Facts.Length; ++i)
+        //{
+        //    this.characterFact.text += this.characterStat.Facts[i] + "\n";
+        //}
+        SetCurrentFact();
+    }
+
+    public void OnNextFact()
+    {
+        if (this.cardPosition.CardStatus != CardStatus.Selected)
         {
-            this.characterFact.text += this.characterStat.Facts[i] + "\n";
+            return;
+        }
+
+        if (this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            ++this.indexFact;
+
+            SetCurrentFact();
+        }
+    }
+
+    public void OnPreviousFact()
+    {
+        if (this.cardPosition.CardStatus != CardStatus.Selected)
+        {
+            return;
+        }
+
+        if (this.indexFact - 1 >= 0)
+        {
+            --this.indexFact;
+
+            SetCurrentFact();
+        }
+    }
+
+    private void SetCurrentFact()
+    {
+        if (this.characterStat.Facts.Length == 0)
+        {
+            this.characterFact.text = "";
+            return;
+        }
+
+        this.characterFact.text = this.characterStat.Facts[this.indexFact];
+
+        if (this.indexFact > 0 && this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [<- ; ->]";
+        }
+        else if (this.indexFact == 0 && this.indexFact + 1 < this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [->]";
+        }
+        if (this.indexFact > 0 && this.indexFact + 1 >= this.characterStat.Facts.Length)
+        {
+            this.characterFact.text += " [<-]";
         }
     }
 }

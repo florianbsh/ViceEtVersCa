@@ -152,6 +152,8 @@ GameObject:
   - component: {fileID: 9203520773603186159}
   - component: {fileID: 9203520773603186147}
   - component: {fileID: 9203520773603186146}
+  - component: {fileID: 4489279378096245839}
+  - component: {fileID: 7576086991250383930}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -271,7 +273,6 @@ MonoBehaviour:
   characterName: {fileID: 9203520774181371123}
   characterDate: {fileID: 9203520774768241178}
   characterFact: {fileID: 9203520774676965372}
-  characterDeath: {fileID: 0}
   characterPrifilePicture: {fileID: 9203520775274016059}
 --- !u!114 &9203520773603186146
 MonoBehaviour:
@@ -292,6 +293,60 @@ MonoBehaviour:
       - m_Target: {fileID: 9203520773603186147}
         m_MethodName: IntroduceNewCard
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4489279378096245839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203520773603186152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b381115ccad84b27a69006b6300b8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d5e062592b5a84480ba6c72f4bd8899f, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9203520773603186147}
+        m_MethodName: OnNextFact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7576086991250383930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203520773603186152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b381115ccad84b27a69006b6300b8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: e358a0ea64f634c428bc051fbe84569e, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9203520773603186147}
+        m_MethodName: OnPreviousFact
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
