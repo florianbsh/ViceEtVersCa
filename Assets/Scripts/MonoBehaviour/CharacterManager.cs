@@ -10,13 +10,15 @@ public class CharacterManager : MonoBehaviour
 
     private CharacterStat currentCharacterStat;
 
-    private GameObject[] characterInPurgatory;
+    private GameObject[] charactersInPurgatory;
+
+    private int purgatoryIndex = 0;
 
     public UnityEvent onLastCharacterDropped;
 
     private void Start()
     {
-        this.characterInPurgatory = new GameObject[this.level.NbCharacterInPurgatory];
+        this.charactersInPurgatory = new GameObject[this.level.NbCharacterInPurgatory];
 
         NextCharacter();
     }
@@ -27,7 +29,7 @@ public class CharacterManager : MonoBehaviour
         {
             NextCharacter();
         }
-        else
+        else if (isFirstTime && this.level.isBatchEnd())
         {
             onLastCharacterDropped.Invoke();
         }
@@ -35,18 +37,84 @@ public class CharacterManager : MonoBehaviour
 
     public void NextCharacter()
     {
+        if (NextCharacterInPurgatory())
+        {
+            return;
+        }
+
         this.currentCharacterStat = this.level.GetCurrentCharacterStat();
 
         GameObject character = Instantiate(this.level.CharacterPrefab, this.level.InitialPosition, Quaternion.identity);
     }
 
-    public void OnNextBatch()
+    public bool NextCharacterInPurgatory()
     {
+        if (this.purgatoryIndex >= this.level.NbCharacterInPurgatory)
+        {
+            return false;
+        }
 
+        GameObject character = null;
+
+        for (int i = this.purgatoryIndex; i < this.charactersInPurgatory.Length; ++i)
+        {
+            if (this.charactersInPurgatory[i] != null)
+            {
+                character = this.charactersInPurgatory[this.purgatoryIndex];
+                break;
+            }
+            ++this.purgatoryIndex;
+        }
+
+        if (character == null)
+        {
+            return false;
+        }
+
+        CharacterController characterController = character.GetComponent<CharacterController>();
+
+        this.currentCharacterStat = characterController.CharacterStat;
+
+        characterController.HasBeenJudged = false;
+
+        character.transform.position = this.level.InitialPosition;
+
+        characterController.OnCharacterSelected();
+
+        this.charactersInPurgatory[this.purgatoryIndex] = null;
+
+        ++this.purgatoryIndex;
+
+        return true;
     }
 
-    public void OnCharacterInPurgatory()
+    public void OnNextBatch()
     {
+        this.purgatoryIndex = 0;
+        NextCharacter();
+    }
 
+    public void OnAddCharacterInPurgatory(GameObject character)
+    {
+        for (int i = 0; i < this.charactersInPurgatory.Length; ++i)
+        {
+            if (this.charactersInPurgatory[i] == null)
+            {
+                this.charactersInPurgatory[i] = character;
+                return;
+            }
+        }
+    }
+
+    public void OnRemoveCharacterInPurgatory(GameObject character)
+    {
+        for (int i = 0; i < this.charactersInPurgatory.Length; ++i)
+        {
+            if (this.charactersInPurgatory[i] == character)
+            {
+                this.charactersInPurgatory[i] = null;
+                return;
+            }
+        }
     }
 }

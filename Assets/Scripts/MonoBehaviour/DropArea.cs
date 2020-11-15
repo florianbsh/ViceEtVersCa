@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(BoxCollider2D))] 
 public class DropArea : MonoBehaviour
 {
+    public Events.GameObjectEvent OnAddPurgatoty;
+    public Events.GameObjectEvent OnRemovePurgatory;
+
     [SerializeField] private int lines;
     [SerializeField] private int columns;
     [SerializeField] private Vector2 elementSize;
@@ -38,6 +42,11 @@ public class DropArea : MonoBehaviour
             character.ApplyResetPosition();
             elements[numElements] = character;
             ++numElements;
+
+            if (this.zone == Zone.Purgatory)
+            {
+                this.OnAddPurgatoty.Invoke(collision.gameObject);
+            }
         }
     }
 
@@ -53,6 +62,11 @@ public class DropArea : MonoBehaviour
                     RepositionElements(i);
                 }
             }
+        }
+
+        if (this.zone == Zone.Purgatory)
+        {
+            this.OnRemovePurgatory.Invoke(collision.gameObject);
         }
     }
 
